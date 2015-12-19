@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="363.0" prefWidth="693.0" stylesheets="@DarkTheme.css" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.makery.address.view.MortgageController">
+   <children>
+      <SplitPane dividerPositions="0.5021645021645021" layoutX="153.0" layoutY="70.0" prefHeight="300.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" styleClass="background">
+               <children>
+                  <TextField fx:id="txtIncome" layoutX="30.0" layoutY="25.0" />
+                  <TextField fx:id="txtExpenses" layoutX="30.0" layoutY="79.0" />
+                  <TextField fx:id="txtCreditScore" layoutX="28.0" layoutY="128.0" />
+                  <TextField fx:id="txtHouseCost" layoutX="28.0" layoutY="181.0" />
+                  <Label fx:id="incomeLabel" layoutX="240.0" layoutY="33.0" styleClass="background" text="Income" />
+                  <Label fx:id="ExpensesLabel" layoutX="235.0" layoutY="87.0" prefHeight="21.0" prefWidth="90.0" text="Expenses" />
+                  <Label fx:id="creditscoreLabel" layoutX="237.0" layoutY="136.0" text="CreditScore" />
+                  <Label fx:id="HouseCostLabel" layoutX="240.0" layoutY="189.0" text="HouseCost" />
+                  <Label fx:id="termLabel" layoutX="240.0" layoutY="241.0" text="cmbTerm" />
+                  <TextField fx:id="txtlblMortgagePayment" layoutX="28.0" layoutY="285.0" />
+                  <Label fx:id="lblMortgagePaymentLabel" layoutX="237.0" layoutY="294.0" text="lblMortgagePayment" />
+                  <Button fx:id="GetPayment" layoutX="209.0" layoutY="322.0" mnemonicParsing="false" text="get payment" />
+                  <ComboBox fx:id="cmbTerm" layoutX="25.0" layoutY="233.0" prefHeight="37.0" prefWidth="206.0" />
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="362.0" prefWidth="339.0" styleClass="background">
+               <children>
+                  <ButtonBar layoutX="54.0" layoutY="250.0" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="10.0" />
+                  <TextField fx:id="txtPV" layoutX="19.0" layoutY="25.0" />
+                  <TextField fx:id="txtFV" layoutX="19.0" layoutY="76.0" />
+                  <TextField fx:id="txtRate" layoutX="19.0" layoutY="130.0" />
+                  <TextField fx:id="txtPeriods" layoutX="19.0" layoutY="181.0" />
+                  <TextField fx:id="txtPMT" layoutX="19.0" layoutY="234.0" />
+                  <Label fx:id="PVLabel" layoutX="210.0" layoutY="33.0" text="PV" />
+                  <Label fx:id="FVLabel" layoutX="212.0" layoutY="84.0" text="FV" />
+                  <Label fx:id="RateLabel" layoutX="210.0" layoutY="138.0" text="Rate" />
+                  <Label fx:id="PeriodsLabel" layoutX="212.0" layoutY="189.0" text="Period" />
+                  <Label fx:id="PMTLabel" layoutX="212.0" layoutY="242.0" text="PMT" />
+                  <Button fx:id="GetPMT" layoutX="219.0" layoutY="303.0" mnemonicParsing="false" onAction="#handlePMT" text="get PMT" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
